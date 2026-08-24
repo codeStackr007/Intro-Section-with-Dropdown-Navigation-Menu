@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Intro Section with Dropdown Navigation: A Frontend Mentor challenge, built with HTML5, BEM, CSS3 and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Intro Section, Dropdown Navigation, HTML5, CSS3, JavaScript, Responsive Design, Frontend Mentor"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts | Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="Snap home" />
+        </a>
+
+        <button
+          class="header__toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <img
+            src="images/icon-menu.svg"
+            class="header__toggle-icon header__toggle-icon--open"
+            alt="Open menu"
+            aria-hidden="true"
+          />
+          <img
+            src="images/icon-close-menu.svg"
+            class="header__toggle-icon header__toggle-icon--close"
+            alt="Close menu"
+            aria-hidden="true"
+          />
+        </button>
+
+        <nav class="header__nav" id="primary-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <button
+                class="header__nav-trigger"
+                aria-expanded="false"
+                aria-controls="features-dropdown"
+              >
+                Features
+                <img
+                  class="header__nav-trigger-icon"
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <ul class="header__nav-dropdown-list" id="features-dropdown">
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">
+                    <img src="images/icon-todo.svg" alt="Notepad Icon" />
+                    Todo List</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">
+                    <img src="images/icon-calendar.svg" alt="Calendar Icon" />
+                    Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">
+                    <img src="images/icon-reminders.svg" alt="Bell Icon" />
+                    Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">
+                    <img src="images/icon-planning.svg" alt="Clock Icon" />
+                    Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="header__nav-item">
+              <button
+                class="header__nav-trigger"
+                aria-expanded="false"
+                aria-controls="company-dropdown"
+              >
+                Company
+                <img
+                  class="header__nav-trigger-icon"
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <ul class="header__nav-dropdown-list" id="company-dropdown">
+                <li>
+                  <a href="#" class="header__nav-dropdown-link"> History</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">Our Team</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-dropdown-link">Blog</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Careers</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About</a>
+            </li>
+          </ul>
+
+          <div class="header__actions">
+            <a href="#" class="header__login-btn">Login</a>
+            <a href="#" class="btn btn--outline">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Make remote work</h1>
+          <p class="hero__text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="btn hero__btn">Learn more</a>
+
+          <section class="clients">
+            <ul class="clients__list">
+              <li><img src="images/client-databiz.svg" alt="Databiz" /></li>
+              <li>
+                <img src="images/client-audiophile.svg" alt="Audiophile" />
+              </li>
+              <li><img src="images/client-meet.svg" alt="Meet" /></li>
+              <li><img src="images/client-maker.svg" alt="Maker" /></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="hero__img">
+          <img
+            src="images/image-hero-mobile.png"
+            class="hero__img-mobile"
+            alt="Person using a laptop"
+          />
+          <img
+            src="images/image-hero-desktop.png"
+            class="hero__img-desktop"
+            alt="Person using a laptop"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
